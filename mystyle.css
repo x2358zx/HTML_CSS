@@ -1,0 +1,114 @@
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+html { font-size: 16px; }
+
+.nav-list{
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid gray;
+  font-weight: bold;
+  gap: 1.5rem;
+  font-size: 1.25rem; /*20px*/
+}
+
+.nav-item{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #000000;
+  transition: color 0.3s;
+}
+
+.nav-item a:hover {
+  color: blue;
+}
+
+.banner{
+  display: flex;
+  border-bottom: 2px solid gray;
+  align-items: center;
+}
+
+.banner-left,.banner-right {
+  flex: 0 0 50%;
+  box-sizing: border-box;
+}
+
+.banner img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.banner-right{
+  font-weight: bold;
+  padding-left: 1rem;
+}
+
+.banner-right h1{
+   font-size: 1.25rem; /*20px*/
+}
+
+.right-time{
+  color: #3C3C3C;
+  font-size: 0.875rem; /*14px*/
+}
+
+.right-wrap{
+  color: blue;
+  padding-top: 0.625em;
+  padding-bottom: 0.75em;
+  font-size: 1rem; /*16px*/
+}
+
+.badge{
+  color: #FFF;
+  margin-left: 5px;
+  background-color: blue;
+  font-size: 0.75rem; /* 12px */
+  padding: 0.6em 0.625em;
+  border-radius: 9999px;
+  display: inline-block;
+}
+
+/* 手機768斷點 */
+@media (max-width: 768px) {
+  html { font-size: 16px; } /*看手機板的完整圖，好像沒有縮小字*/
+  
+  .banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+/* 這2行才能切手機板的時候讓圖跟著父走 */
+  .banner-left,
+  .banner-right {
+    flex: none;
+    width: 100%;
+  }
+/* 這2行才能切手機板的時候讓圖跟著父走 */
+  .banner-left img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .banner-right {
+    padding-left: 0.5rem;
+    text-align: left;
+    padding-bottom: 1.8rem;
+    padding-top: 1.8rem;
+  }
+  
+  .badge {
+    padding: 0.5em 0.625em;
+  }
+
+ 
+}
