@@ -1,0 +1,47 @@
+/* 手機768斷點 */
+@media (max-width: 768px) {
+    html { font-size: 16px; } /*看手機板的完整圖，好像沒有縮小字*/
+
+    body {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    /* 橫幅 */
+    .banner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* 這2行才能切手機板的時候讓圖跟著父走 */
+    .banner-left,
+    .banner-right {
+        flex: none;
+        width: 100%;
+    }
+    /* 這2行才能切手機板的時候讓圖跟著父走 */
+    .banner-left img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .banner-right {
+        padding-left: 0.5rem;
+        text-align: left;
+        padding-bottom: 1.8rem;
+        padding-top: 1.8rem;
+    }
+
+    .badge {
+        padding: 0.5em 0.625em;
+    }
+
+    /* 前言 */
+    .section{
+        max-width: 100%;
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+    }
+ 
+}

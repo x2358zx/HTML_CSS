@@ -1,17 +1,19 @@
 body {
   max-width: 1920px;
   margin: 0 auto;
+  font-family: 'Noto Sans TC', 'Microsoft JhengHei', 'PingFang TC', sans-serif;
 }
 
 html { font-size: 16px; }
 
+/* 導覽列 */
 .nav-list{
   display: flex;
   justify-content: center;
   border-bottom: 1px solid gray;
   font-weight: bold;
-  gap: 1.5rem;
-  font-size: 1.25rem; /*20px*/
+  gap: 2.5rem;
+  font-size: 1.75rem; /*28px*/
 }
 
 .nav-item{
@@ -29,6 +31,7 @@ html { font-size: 16px; }
   color: blue;
 }
 
+/* 橫幅 */
 .banner{
   display: flex;
   border-bottom: 2px solid gray;
@@ -52,63 +55,55 @@ html { font-size: 16px; }
 }
 
 .banner-right h1{
-   font-size: 1.25rem; /*20px*/
+   font-size: 1.75rem; /*28px*/
 }
 
 .right-time{
   color: #3C3C3C;
-  font-size: 0.875rem; /*14px*/
+  font-size: 1rem; /*16px*/
 }
 
 .right-wrap{
   color: blue;
   padding-top: 0.625em;
   padding-bottom: 0.75em;
-  font-size: 1rem; /*16px*/
+  font-size: 1.5rem; /*24px*/
 }
 
 .badge{
   color: #FFF;
   margin-left: 5px;
   background-color: blue;
-  font-size: 0.75rem; /* 12px */
+  font-size: 1rem; /* 最新文章16px */
   padding: 0.6em 0.625em;
   border-radius: 9999px;
   display: inline-block;
+  margin-left: 0.5rem;
 }
 
-/* 手機768斷點 */
-@media (max-width: 768px) {
-  html { font-size: 16px; } /*看手機板的完整圖，好像沒有縮小字*/
-  
-  .banner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-/* 這2行才能切手機板的時候讓圖跟著父走 */
-  .banner-left,
-  .banner-right {
-    flex: none;
-    width: 100%;
-  }
-/* 這2行才能切手機板的時候讓圖跟著父走 */
-  .banner-left img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  .banner-right {
-    padding-left: 0.5rem;
-    text-align: left;
-    padding-bottom: 1.8rem;
-    padding-top: 1.8rem;
-  }
-  
-  .badge {
-    padding: 0.5em 0.625em;
-  }
-
- 
+/* 前言 */
+.section-title{
+  color: blue;
+  font-size: 1.75rem; /* 前言28px */
+  font-weight: bold;
+  margin-bottom: 1.5rem;
 }
+
+.section{
+  max-width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+
+.section p{
+  line-height: 1.5; /* 行高放大1.5倍 ，字體大小 16 px → 行高 = 16 px × 1.5 = 24 px */
+  margin-bottom: 3rem;
+}
+
+.section img{
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
