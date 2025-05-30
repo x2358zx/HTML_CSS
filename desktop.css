@@ -36,6 +36,7 @@ html { font-size: 16px; }
   display: flex;
   border-bottom: 2px solid gray;
   align-items: center;
+  margin-bottom: 5rem;
 }
 
 .banner-left,.banner-right {
@@ -86,7 +87,6 @@ html { font-size: 16px; }
   color: blue;
   font-size: 1.75rem; /* 前言28px */
   font-weight: bold;
-  margin-bottom: 1.5rem;
 }
 
 .section{
@@ -94,12 +94,13 @@ html { font-size: 16px; }
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  margin-top: 5rem;
+  margin-bottom: 3rem;
+  gap: 0.75rem;
 }
 
 .section p{
-  line-height: 1.5; /* 行高放大1.5倍 ，字體大小 16 px → 行高 = 16 px × 1.5 = 24 px */
-  margin-bottom: 3rem;
+  line-height: 150%; /* 行高放大1.5倍 ，字體大小 16 px → 行高 = 16 px × 1.5 = 24 px */
+  font-size: 1rem;
 }
 
 .section img{
@@ -107,3 +108,33 @@ html { font-size: 16px; }
   margin-bottom: 1.5rem;
 }
 
+.section h3{
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.section ol{
+  line-height: 150%;
+  list-style: decimal;
+}
+
+.section li{
+  margin-left: 1.3rem;
+}
+
+.section a{
+  text-decoration: none;
+  color: #0027D5;
+  transition: color 0.3s;
+}
+
+.section a:hover{
+  text-decoration: revert;
+}
+
+.summary-box{
+  background-color: #EDEDED;
+  border-radius: 20px;
+  padding: 1.5rem;
+}
