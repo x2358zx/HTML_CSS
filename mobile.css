@@ -43,4 +43,7 @@
         margin-right: 12px;
     }
  
+    .footer-content{
+        display: none;
+    }
 }

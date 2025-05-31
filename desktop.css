@@ -40,8 +40,10 @@ h3{
 }
 
 .content{
-  margin-top: 80px;
-  margin-bottom: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-top: 2px solid gray;
+  border-bottom: 3px solid gray;
 }
 
 html { font-size: 16px; }
@@ -76,7 +78,6 @@ html { font-size: 16px; }
 /* 橫幅 */
 .banner{
   display: flex;
-  border-bottom: 2px solid gray;
   align-items: center;
 }
 
@@ -108,7 +109,7 @@ html { font-size: 16px; }
 .right-wrap{
   color: #0027D5;
   padding-top: 4px;
-  padding-bottom: 0.75em;
+  padding-bottom: 12px;
 }
 
 .badge{
@@ -238,4 +239,34 @@ html { font-size: 16px; }
 
 .page-left-text{
   padding-left: 4px;
+}
+
+
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0;
+}
+
+.email a{
+  font-size: 2rem;
+  text-decoration: none;
+  color: #000000;
+  transition: color 0.3s;
+}
+
+.email a:hover{
+  color: #0027D5;
+}
+
+.icon-list{
+  display: flex;
+  align-items: center;
+}
+
+.company-text{
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
