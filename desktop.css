@@ -70,7 +70,7 @@ html { font-size: 16px; }
 }
 
 .nav-item a:hover {
-  color: blue;
+  color: #0027D5;
 }
 
 /* 橫幅 */
@@ -106,7 +106,7 @@ html { font-size: 16px; }
 }
 
 .right-wrap{
-  color: blue;
+  color: #0027D5;
   padding-top: 4px;
   padding-bottom: 0.75em;
 }
@@ -114,7 +114,7 @@ html { font-size: 16px; }
 .badge{
   color: #FFF;
   margin-left: 5px;
-  background-color: blue;
+  background-color: #0027D5;
   font-size: 1rem; /* 最新文章16px */
   padding-left: 12px;
   padding-right: 12px;
@@ -125,7 +125,7 @@ html { font-size: 16px; }
 
 /* 前言 */
 .section-title{
-  color: blue;
+  color: #0027D5;
   font-size: 1.75rem; /* 前言28px */
   margin-bottom: 24PX;
 }
@@ -142,9 +142,6 @@ html { font-size: 16px; }
 .section img{
   width: 100%;
   margin-bottom: 24px;
-}
-
-.section h2{
 }
 
 .section h3{
