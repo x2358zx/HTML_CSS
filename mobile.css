@@ -37,11 +37,10 @@
         padding: 0.5em 0.625em;
     }
 
-    /* 前言 */
-    .section{
+    .content{
         max-width: 100%;
-        margin-left: 0.75rem;
-        margin-right: 0.75rem;
+        margin-left: 12px;
+        margin-right: 12px;
     }
  
 }
