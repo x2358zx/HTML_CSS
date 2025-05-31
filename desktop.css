@@ -4,6 +4,47 @@ body {
   font-family: 'Noto Sans TC', 'Microsoft JhengHei', 'PingFang TC', sans-serif;
 }
 
+p {
+  line-height: 150%; /* 行高放大1.5倍 ，字體大小 16 px → 行高 = 16 px × 1.5 = 24 px */
+  font-size: 1rem;
+}
+
+ol{
+  line-height: 150%;
+  list-style: decimal;
+  font-size: 1rem;
+  margin-bottom: 24px;
+}
+
+li{
+  line-height: 150%;
+  margin-left: 20px;
+  font-size: 1rem;
+}
+
+h1{
+  line-height: 150%;
+  font-size: 1.75rem; /* 28px */
+  font-weight: bold;
+}
+
+h2{
+  line-height: 150%;
+  font-size: 1.5rem; /* 24px */
+  font-weight: bold;
+}
+
+h3{
+  line-height: 150%;
+  font-size: 1.25rem; /* 20px */
+  font-weight: bold;
+}
+
+.content{
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
 html { font-size: 16px; }
 
 /* 導覽列 */
@@ -19,6 +60,7 @@ html { font-size: 16px; }
 .nav-item{
   padding-top: 15px;
   padding-bottom: 15px;
+  font-size: 1.75rem;
 }
 
 .nav-item a {
@@ -36,7 +78,6 @@ html { font-size: 16px; }
   display: flex;
   border-bottom: 2px solid gray;
   align-items: center;
-  margin-bottom: 5rem;
 }
 
 .banner-left,.banner-right {
@@ -66,9 +107,8 @@ html { font-size: 16px; }
 
 .right-wrap{
   color: blue;
-  padding-top: 0.625em;
+  padding-top: 4px;
   padding-bottom: 0.75em;
-  font-size: 1.5rem; /*24px*/
 }
 
 .badge{
@@ -76,51 +116,43 @@ html { font-size: 16px; }
   margin-left: 5px;
   background-color: blue;
   font-size: 1rem; /* 最新文章16px */
-  padding: 0.6em 0.625em;
+  padding-left: 12px;
+  padding-right: 12px;
   border-radius: 9999px;
   display: inline-block;
-  margin-left: 0.5rem;
+  margin-left: 8px;
 }
 
 /* 前言 */
 .section-title{
   color: blue;
   font-size: 1.75rem; /* 前言28px */
-  font-weight: bold;
+  margin-bottom: 24PX;
 }
 
 .section{
-  max-width: 50%;
+  max-width: 636px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  margin-bottom: 3rem;
-  gap: 0.75rem;
-}
-
-.section p{
-  line-height: 150%; /* 行高放大1.5倍 ，字體大小 16 px → 行高 = 16 px × 1.5 = 24 px */
-  font-size: 1rem;
+  margin-bottom: 48px;
+  /*gap: 0.75rem;*/
 }
 
 .section img{
   width: 100%;
-  margin-bottom: 1.5rem;
+  margin-bottom: 24px;
+}
+
+.section h2{
 }
 
 .section h3{
-  font-size: 1.25rem;
-  margin-bottom: 0.75rem;
-  margin-top: 1.5rem;
+  margin-bottom: 12px;
 }
 
-.section ol{
-  line-height: 150%;
-  list-style: decimal;
-}
-
-.section li{
-  margin-left: 1.3rem;
+.section p{
+  margin-bottom: 8px;
 }
 
 .section a{
@@ -136,5 +168,5 @@ html { font-size: 16px; }
 .summary-box{
   background-color: #EDEDED;
   border-radius: 20px;
-  padding: 1.5rem;
+  padding: 24px;
 }
