@@ -1,0 +1,94 @@
+body {
+
+    font-family: 'Noto Sans TC', 'Microsoft JhengHei', 'PingFang TC', sans-serif;
+    color: #000; 
+    
+}
+
+h1,h2,h3,p{
+    line-height: 150%;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+}
+
+p{
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.container{
+    max-width: 1920px;
+    margin: 0 auto;
+    
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 15%;
+    margin-right: 15%;
+    gap: 24px;
+}
+
+.content{
+    display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.content li{
+    max-width: 416px;
+	margin-bottom: 24px;
+}
+
+
+
+.card-tags{
+    color: blue;
+    font-size: 24px;
+}
+
+.card-title{
+    font-size: 28px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.card-description{
+    color:#4B4B4B;
+    margin-bottom: 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 1.5;
+    
+}
+
+.card-link{
+    font-size: 1rem;
+    color: #4B4B4B;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 40px;
+    border: 2px solid #4B4B4B;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    line-height: 150%;
+}
+
+.badge{
+    color: #FFF;
+    margin-left: 5px;
+    background-color: #0027D5;
+    font-size: 1rem; /* 最新文章16px */
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 9999px;
+    display: inline-block;
+    margin-left: 8px;
+}
+
