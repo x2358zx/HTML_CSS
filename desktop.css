@@ -1,40 +1,39 @@
 body {
-  max-width: 1920px;
+  /*max-width: 1920px;*/
   margin: 0 auto;
   font-family: 'Noto Sans TC', 'Microsoft JhengHei', 'PingFang TC', sans-serif;
+  line-height: 150%; /* 行高放大1.5倍 ，字體大小 16 px → 行高 = 16 px × 1.5 = 24 px */
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 p {
-  line-height: 150%; /* 行高放大1.5倍 ，字體大小 16 px → 行高 = 16 px × 1.5 = 24 px */
   font-size: 1rem;
 }
 
 ol{
-  line-height: 150%;
   list-style: decimal;
   font-size: 1rem;
 }
 
 li{
-  line-height: 150%;
   margin-left: 25px;
   font-size: 1rem;
 }
 
 h1{
-  line-height: 150%;
   font-size: 1.75rem; /* 28px */
   font-weight: bold;
 }
 
 h2{
-  line-height: 150%;
   font-size: 1.5rem; /* 24px */
   font-weight: bold;
 }
 
 h3{
-  line-height: 150%;
   font-size: 1.25rem; /* 20px */
   font-weight: bold;
 }
@@ -243,6 +242,7 @@ html { font-size: 16px; }
 
 
 .footer-content{
+  max-width: 1296px;
   display: flex;
   justify-content: space-between;
   padding: 80px 0;
