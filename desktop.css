@@ -270,3 +270,7 @@ html { font-size: 16px; }
   padding-top: 24px;
   padding-bottom: 24px;
 }
+
+.list-disc .read-a{
+  color: #000000;
+}
